@@ -1,0 +1,73 @@
+:root {
+    --squareHoverColor: lightgreen;
+}
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+
+  .square:hover {
+    background: var(--squareHoverColor);
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+
+  .restart-game {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 2px 0px 2px 0px;
+    width: 102px;
+    border: none;
+  }
+
+  .restart-game:hover, .restart-game:focus {
+    border: solid lightgreen;
+  }
+  
